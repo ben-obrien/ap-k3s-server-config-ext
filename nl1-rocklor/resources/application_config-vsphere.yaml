@@ -1,0 +1,20 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: config-vsphere-cu
+  namespace: argocd
+spec:
+  destination:
+    namespace: swift-config-vsphere
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    directory:
+      recurse: true
+    path: cu
+    repoURL: https://bitbucket.swift.com/scm/~bobrien/ap-vsphere-config-lab.git
+    targetRevision: myvariant
+  syncPolicy:
+    automated:
+      selfHeal: true

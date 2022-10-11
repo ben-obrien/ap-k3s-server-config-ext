@@ -1,0 +1,18 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: config-openshift
+  namespace: argocd
+spec:
+  destination:
+    namespace: swift-config-openshift
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: .
+    repoURL: file:///repositories/ocp-config-lab.git
+    targetRevision: myvariant
+  syncPolicy:
+    automated:
+      selfHeal: true
