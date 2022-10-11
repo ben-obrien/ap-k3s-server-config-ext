@@ -4,4 +4,4 @@ kind: Kustomization
 
 resources:
 - resources/application_config-ocp.yaml
-- resources/application_config-vsphere.yaml
+- resources/application_config-vsphere-vcsim.yaml

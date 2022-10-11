@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: config-vsphere
+  name: config-vsphere-vcsim
   namespace: argocd
 spec:
   destination:
