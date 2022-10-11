@@ -7,12 +7,12 @@ metadata:
 spec:
   destination:
     namespace: swift-config-openshift
-    server: https://kubernetes.default.svc
+    server: http://cluster-rocklor:8001
   project: default
   source:
     path: .
-    repoURL: file:///repositories/ocp-config-lab.git
-    targetRevision: myvariant
+    repoURL: https://github.com/ben-obrien/ap-ocp-config-ext
+    targetRevision: main
   syncPolicy:
     automated:
       selfHeal: true
