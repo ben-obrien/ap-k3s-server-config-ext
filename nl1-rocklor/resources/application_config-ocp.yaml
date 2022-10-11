@@ -2,11 +2,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: config-openshift
+  name: config-ocp
   namespace: argocd
 spec:
   destination:
-    namespace: swift-config-openshift
+    namespace: swift-config-ocp
     server: http://cluster-rocklor:8001
   project: default
   source:
