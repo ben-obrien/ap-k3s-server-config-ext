@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: vsphere-operator
-    repoURL: https://github.com/ben-obrien/ap-k8s-server-config-ext
+    repoURL: https://github.com/ben-obrien/ap-k3s-server-config-ext
     targetRevision: main
   syncPolicy:
     automated:
