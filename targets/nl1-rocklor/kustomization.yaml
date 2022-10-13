@@ -6,5 +6,5 @@ namePrefix: config-k3s-server-
 
 resources:
 - resources/application_crds.yaml
-#- resources/application_namespaces.yaml
+- resources/application_namespaces.yaml
 #- resources/application_vsphere-operator.yaml
