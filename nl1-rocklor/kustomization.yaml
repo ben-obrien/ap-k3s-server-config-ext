@@ -1,7 +1,0 @@
----
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-
-resources:
-- resources/application_config-ocp.yaml
-- resources/application_config-vsphere-vcsim.yaml
