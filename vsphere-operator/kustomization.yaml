@@ -7,7 +7,6 @@ namespace: swift-operator-vsphere
 images:
 - name: docker.io/swiftinc/ap-vsphere-operator
   newName: registry:5000/swiftinc/ap-vsphere-operator
-  newTag: SNAPSHOT
 
 resources:
 - resources/clusterrolebinding_vsphere-admins.yaml
