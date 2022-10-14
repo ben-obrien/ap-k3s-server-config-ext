@@ -1,0 +1,44 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vsphere-operator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: vsphere-operator
+  template:
+    metadata:
+      labels:
+        name: vsphere-operator
+    spec:
+      serviceAccountName: vsphere-operator
+      containers:
+      - name: vsphere-operator
+        image: docker.io/swiftinc/ap-vsphere-operator@sha256:23877c834a7a9893d2a32c13b37bf260467ce37bdef467bb9b13636d8639e2f0
+        imagePullPolicy: Always
+        args:
+        - "--max-concurrent-reconciles"
+        - "5"
+        env:
+        - name: VMWARE_PORT
+          value: "443"
+        - name: VMWARE_VALIDATE_CERTS
+          value: "true"
+        - name: PACKER_CACHE_DIR
+          value: /var/tmp
+        - name: WATCH_NAMESPACE
+          value: ""
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+          name: http
+        volumeMounts:
+        - mountPath: /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+          name: ca-trust
+      volumes:
+      - name: ca-trust
+        hostPath:
+          path: /etc/ssl/certs/ca-certificates.crt
+          type: ""

@@ -4,5 +4,16 @@ kind: Kustomization
 
 namespace: swift-operator-vsphere
 
+images:
+- name: docker.io/swiftinc/ap-vsphere-operator
+  newName: localhost:5000/swiftinc/ap-vsphere-operator
+  newTag: SNAPSHOT
+
 resources:
-- resources/configmap_helloworld.yaml
+- resources/clusterrolebinding_vsphere-admins.yaml
+- resources/clusterrole_vsphere-admin.yaml
+- resources/clusterrole_vsphere-operator.yaml
+- resources/deployment_vsphere-operator.yaml
+- resources/rolebinding_vsphere-operator.yaml
+- resources/serviceaccount_vsphere-operator.yaml
+- resources/service_vsphere-operator-packer.yaml

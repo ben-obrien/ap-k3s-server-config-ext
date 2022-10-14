@@ -1,0 +1,510 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vsphere-operator-packer
+spec:
+  selector:
+    name: vsphere-operator
+  type: LoadBalancer
+  ports:
+  - port: 32000
+    name: tcp-32000
+    protocol: TCP
+    targetPort: 32000
+    nodePort: 32000
+  - port: 32001
+    name: tcp-32001
+    protocol: TCP
+    targetPort: 32001
+    nodePort: 32001
+  - port: 32002
+    name: tcp-32002
+    protocol: TCP
+    targetPort: 32002
+    nodePort: 32002
+  - port: 32003
+    name: tcp-32003
+    protocol: TCP
+    targetPort: 32003
+    nodePort: 32003
+  - port: 32004
+    name: tcp-32004
+    protocol: TCP
+    targetPort: 32004
+    nodePort: 32004
+  - port: 32005
+    name: tcp-32005
+    protocol: TCP
+    targetPort: 32005
+    nodePort: 32005
+  - port: 32006
+    name: tcp-32006
+    protocol: TCP
+    targetPort: 32006
+    nodePort: 32006
+  - port: 32007
+    name: tcp-32007
+    protocol: TCP
+    targetPort: 32007
+    nodePort: 32007
+  - port: 32008
+    name: tcp-32008
+    protocol: TCP
+    targetPort: 32008
+    nodePort: 32008
+  - port: 32009
+    name: tcp-32009
+    protocol: TCP
+    targetPort: 32009
+    nodePort: 32009
+  - port: 32010
+    name: tcp-32010
+    protocol: TCP
+    targetPort: 32010
+    nodePort: 32010
+  - port: 32011
+    name: tcp-32011
+    protocol: TCP
+    targetPort: 32011
+    nodePort: 32011
+  - port: 32012
+    name: tcp-32012
+    protocol: TCP
+    targetPort: 32012
+    nodePort: 32012
+  - port: 32013
+    name: tcp-32013
+    protocol: TCP
+    targetPort: 32013
+    nodePort: 32013
+  - port: 32014
+    name: tcp-32014
+    protocol: TCP
+    targetPort: 32014
+    nodePort: 32014
+  - port: 32015
+    name: tcp-32015
+    protocol: TCP
+    targetPort: 32015
+    nodePort: 32015
+  - port: 32016
+    name: tcp-32016
+    protocol: TCP
+    targetPort: 32016
+    nodePort: 32016
+  - port: 32017
+    name: tcp-32017
+    protocol: TCP
+    targetPort: 32017
+    nodePort: 32017
+  - port: 32018
+    name: tcp-32018
+    protocol: TCP
+    targetPort: 32018
+    nodePort: 32018
+  - port: 32019
+    name: tcp-32019
+    protocol: TCP
+    targetPort: 32019
+    nodePort: 32019
+  - port: 32020
+    name: tcp-32020
+    protocol: TCP
+    targetPort: 32020
+    nodePort: 32020
+  - port: 32021
+    name: tcp-32021
+    protocol: TCP
+    targetPort: 32021
+    nodePort: 32021
+  - port: 32022
+    name: tcp-32022
+    protocol: TCP
+    targetPort: 32022
+    nodePort: 32022
+  - port: 32023
+    name: tcp-32023
+    protocol: TCP
+    targetPort: 32023
+    nodePort: 32023
+  - port: 32024
+    name: tcp-32024
+    protocol: TCP
+    targetPort: 32024
+    nodePort: 32024
+  - port: 32025
+    name: tcp-32025
+    protocol: TCP
+    targetPort: 32025
+    nodePort: 32025
+  - port: 32026
+    name: tcp-32026
+    protocol: TCP
+    targetPort: 32026
+    nodePort: 32026
+  - port: 32027
+    name: tcp-32027
+    protocol: TCP
+    targetPort: 32027
+    nodePort: 32027
+  - port: 32028
+    name: tcp-32028
+    protocol: TCP
+    targetPort: 32028
+    nodePort: 32028
+  - port: 32029
+    name: tcp-32029
+    protocol: TCP
+    targetPort: 32029
+    nodePort: 32029
+  - port: 32030
+    name: tcp-32030
+    protocol: TCP
+    targetPort: 32030
+    nodePort: 32030
+  - port: 32031
+    name: tcp-32031
+    protocol: TCP
+    targetPort: 32031
+    nodePort: 32031
+  - port: 32032
+    name: tcp-32032
+    protocol: TCP
+    targetPort: 32032
+    nodePort: 32032
+  - port: 32033
+    name: tcp-32033
+    protocol: TCP
+    targetPort: 32033
+    nodePort: 32033
+  - port: 32034
+    name: tcp-32034
+    protocol: TCP
+    targetPort: 32034
+    nodePort: 32034
+  - port: 32035
+    name: tcp-32035
+    protocol: TCP
+    targetPort: 32035
+    nodePort: 32035
+  - port: 32036
+    name: tcp-32036
+    protocol: TCP
+    targetPort: 32036
+    nodePort: 32036
+  - port: 32037
+    name: tcp-32037
+    protocol: TCP
+    targetPort: 32037
+    nodePort: 32037
+  - port: 32038
+    name: tcp-32038
+    protocol: TCP
+    targetPort: 32038
+    nodePort: 32038
+  - port: 32039
+    name: tcp-32039
+    protocol: TCP
+    targetPort: 32039
+    nodePort: 32039
+  - port: 32040
+    name: tcp-32040
+    protocol: TCP
+    targetPort: 32040
+    nodePort: 32040
+  - port: 32041
+    name: tcp-32041
+    protocol: TCP
+    targetPort: 32041
+    nodePort: 32041
+  - port: 32042
+    name: tcp-32042
+    protocol: TCP
+    targetPort: 32042
+    nodePort: 32042
+  - port: 32043
+    name: tcp-32043
+    protocol: TCP
+    targetPort: 32043
+    nodePort: 32043
+  - port: 32044
+    name: tcp-32044
+    protocol: TCP
+    targetPort: 32044
+    nodePort: 32044
+  - port: 32045
+    name: tcp-32045
+    protocol: TCP
+    targetPort: 32045
+    nodePort: 32045
+  - port: 32046
+    name: tcp-32046
+    protocol: TCP
+    targetPort: 32046
+    nodePort: 32046
+  - port: 32047
+    name: tcp-32047
+    protocol: TCP
+    targetPort: 32047
+    nodePort: 32047
+  - port: 32048
+    name: tcp-32048
+    protocol: TCP
+    targetPort: 32048
+    nodePort: 32048
+  - port: 32049
+    name: tcp-32049
+    protocol: TCP
+    targetPort: 32049
+    nodePort: 32049
+  - port: 32050
+    name: tcp-32050
+    protocol: TCP
+    targetPort: 32050
+    nodePort: 32050
+  - port: 32051
+    name: tcp-32051
+    protocol: TCP
+    targetPort: 32051
+    nodePort: 32051
+  - port: 32052
+    name: tcp-32052
+    protocol: TCP
+    targetPort: 32052
+    nodePort: 32052
+  - port: 32053
+    name: tcp-32053
+    protocol: TCP
+    targetPort: 32053
+    nodePort: 32053
+  - port: 32054
+    name: tcp-32054
+    protocol: TCP
+    targetPort: 32054
+    nodePort: 32054
+  - port: 32055
+    name: tcp-32055
+    protocol: TCP
+    targetPort: 32055
+    nodePort: 32055
+  - port: 32056
+    name: tcp-32056
+    protocol: TCP
+    targetPort: 32056
+    nodePort: 32056
+  - port: 32057
+    name: tcp-32057
+    protocol: TCP
+    targetPort: 32057
+    nodePort: 32057
+  - port: 32058
+    name: tcp-32058
+    protocol: TCP
+    targetPort: 32058
+    nodePort: 32058
+  - port: 32059
+    name: tcp-32059
+    protocol: TCP
+    targetPort: 32059
+    nodePort: 32059
+  - port: 32060
+    name: tcp-32060
+    protocol: TCP
+    targetPort: 32060
+    nodePort: 32060
+  - port: 32061
+    name: tcp-32061
+    protocol: TCP
+    targetPort: 32061
+    nodePort: 32061
+  - port: 32062
+    name: tcp-32062
+    protocol: TCP
+    targetPort: 32062
+    nodePort: 32062
+  - port: 32063
+    name: tcp-32063
+    protocol: TCP
+    targetPort: 32063
+    nodePort: 32063
+  - port: 32064
+    name: tcp-32064
+    protocol: TCP
+    targetPort: 32064
+    nodePort: 32064
+  - port: 32065
+    name: tcp-32065
+    protocol: TCP
+    targetPort: 32065
+    nodePort: 32065
+  - port: 32066
+    name: tcp-32066
+    protocol: TCP
+    targetPort: 32066
+    nodePort: 32066
+  - port: 32067
+    name: tcp-32067
+    protocol: TCP
+    targetPort: 32067
+    nodePort: 32067
+  - port: 32068
+    name: tcp-32068
+    protocol: TCP
+    targetPort: 32068
+    nodePort: 32068
+  - port: 32069
+    name: tcp-32069
+    protocol: TCP
+    targetPort: 32069
+    nodePort: 32069
+  - port: 32070
+    name: tcp-32070
+    protocol: TCP
+    targetPort: 32070
+    nodePort: 32070
+  - port: 32071
+    name: tcp-32071
+    protocol: TCP
+    targetPort: 32071
+    nodePort: 32071
+  - port: 32072
+    name: tcp-32072
+    protocol: TCP
+    targetPort: 32072
+    nodePort: 32072
+  - port: 32073
+    name: tcp-32073
+    protocol: TCP
+    targetPort: 32073
+    nodePort: 32073
+  - port: 32074
+    name: tcp-32074
+    protocol: TCP
+    targetPort: 32074
+    nodePort: 32074
+  - port: 32075
+    name: tcp-32075
+    protocol: TCP
+    targetPort: 32075
+    nodePort: 32075
+  - port: 32076
+    name: tcp-32076
+    protocol: TCP
+    targetPort: 32076
+    nodePort: 32076
+  - port: 32077
+    name: tcp-32077
+    protocol: TCP
+    targetPort: 32077
+    nodePort: 32077
+  - port: 32078
+    name: tcp-32078
+    protocol: TCP
+    targetPort: 32078
+    nodePort: 32078
+  - port: 32079
+    name: tcp-32079
+    protocol: TCP
+    targetPort: 32079
+    nodePort: 32079
+  - port: 32080
+    name: tcp-32080
+    protocol: TCP
+    targetPort: 32080
+    nodePort: 32080
+  - port: 32081
+    name: tcp-32081
+    protocol: TCP
+    targetPort: 32081
+    nodePort: 32081
+  - port: 32082
+    name: tcp-32082
+    protocol: TCP
+    targetPort: 32082
+    nodePort: 32082
+  - port: 32083
+    name: tcp-32083
+    protocol: TCP
+    targetPort: 32083
+    nodePort: 32083
+  - port: 32084
+    name: tcp-32084
+    protocol: TCP
+    targetPort: 32084
+    nodePort: 32084
+  - port: 32085
+    name: tcp-32085
+    protocol: TCP
+    targetPort: 32085
+    nodePort: 32085
+  - port: 32086
+    name: tcp-32086
+    protocol: TCP
+    targetPort: 32086
+    nodePort: 32086
+  - port: 32087
+    name: tcp-32087
+    protocol: TCP
+    targetPort: 32087
+    nodePort: 32087
+  - port: 32088
+    name: tcp-32088
+    protocol: TCP
+    targetPort: 32088
+    nodePort: 32088
+  - port: 32089
+    name: tcp-32089
+    protocol: TCP
+    targetPort: 32089
+    nodePort: 32089
+  - port: 32090
+    name: tcp-32090
+    protocol: TCP
+    targetPort: 32090
+    nodePort: 32090
+  - port: 32091
+    name: tcp-32091
+    protocol: TCP
+    targetPort: 32091
+    nodePort: 32091
+  - port: 32092
+    name: tcp-32092
+    protocol: TCP
+    targetPort: 32092
+    nodePort: 32092
+  - port: 32093
+    name: tcp-32093
+    protocol: TCP
+    targetPort: 32093
+    nodePort: 32093
+  - port: 32094
+    name: tcp-32094
+    protocol: TCP
+    targetPort: 32094
+    nodePort: 32094
+  - port: 32095
+    name: tcp-32095
+    protocol: TCP
+    targetPort: 32095
+    nodePort: 32095
+  - port: 32096
+    name: tcp-32096
+    protocol: TCP
+    targetPort: 32096
+    nodePort: 32096
+  - port: 32097
+    name: tcp-32097
+    protocol: TCP
+    targetPort: 32097
+    nodePort: 32097
+  - port: 32098
+    name: tcp-32098
+    protocol: TCP
+    targetPort: 32098
+    nodePort: 32098
+  - port: 32099
+    name: tcp-32099
+    protocol: TCP
+    targetPort: 32099
+    nodePort: 32099
