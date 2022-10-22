@@ -5,7 +5,7 @@ metadata:
   name: crds
 spec:
   destination:
-    name: rocklor
+    name: decklor
   project: default
   source:
     path: crds

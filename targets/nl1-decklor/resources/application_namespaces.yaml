@@ -2,14 +2,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ocp-operator
+  name: namespaces
 spec:
   destination:
-    name: rocklor
-    namespace: swift-operator-ocp
+    name: decklor
   project: default
   source:
-    path: ocp-operator
+    path: namespaces
     repoURL: https://github.com/ben-obrien/ap-k3s-server-config-ext
     targetRevision: main
   syncPolicy:

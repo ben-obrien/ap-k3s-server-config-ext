@@ -2,13 +2,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespaces
+  name: vsphere-operator
 spec:
   destination:
-    name: rocklor
+    name: decklor
+    namespace: swift-operator-vsphere
   project: default
   source:
-    path: namespaces
+    path: vsphere-operator
     repoURL: https://github.com/ben-obrien/ap-k3s-server-config-ext
     targetRevision: main
   syncPolicy:
