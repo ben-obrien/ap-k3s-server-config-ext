@@ -22,6 +22,8 @@ spec:
         - "--max-concurrent-reconciles"
         - "5"
         env:
+        - name: ANSIBLE_LOG_PATH
+          value: stdout
         - name: VMWARE_PORT
           value: "443"
         - name: VMWARE_VALIDATE_CERTS
