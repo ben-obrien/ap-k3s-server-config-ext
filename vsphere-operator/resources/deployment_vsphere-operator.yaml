@@ -16,7 +16,7 @@ spec:
       serviceAccountName: vsphere-operator
       containers:
       - name: vsphere-operator
-        image: docker.io/swiftinc/ap-vsphere-operator@sha256:563e76af168dff23a12f75d83dc0aa31e185407f74428295542ad52cba41badf
+        image: docker.io/swiftinc/ap-vsphere-operator@sha256:c1e82ec4548b0779b2dbf1b37beff7c69a0e24d5e1d481da167749be0b136c4a
         imagePullPolicy: Always
         args:
         - "--max-concurrent-reconciles"
